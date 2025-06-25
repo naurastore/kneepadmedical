@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kneepad Medical - Bantu Redakan Nyeri, Tanpa Ribet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+        }
+        
+        .price-badge {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .floating-cta {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .countdown-number {
+            transition: all 0.3s ease;
+        }
+        
+        .countdown-number.active {
+            transform: scale(1.1);
+            color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Sticky Price Banner -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white shadow-lg z-50 border-t border-gray-200 py-3 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center mb-2 md:mb-0">
+                <div class="mr-4">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdxx-lyltya3f4y7g1b.webp" alt="Kneepad Medical" class="w-16 h-16 object-cover rounded-lg">
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800">Kneepad Medical</h3>
+                    <div class="flex items-center">
+                        <span class="text-red-600 font-bold text-lg mr-2">Rp 179.000</span>
+                        <span class="text-gray-500 line-through text-sm">Rp 269.000</span>
+                        <span class="ml-2 bg-red-100 text-red-800 text-xs font-medium px-2 py-0.5 rounded">Diskon 50%</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#order" class="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 flex items-center justify-center">
+                <i class="fas fa-shopping-cart mr-2"></i> Pesan Sekarang
+            </a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdxx-lyltya3f4y7g1b.webp" alt="Logo" class="h-10 w-10 rounded-full">
+                <span class="ml-3 font-bold text-gray-800 text-xl">Kneepad<span class="text-blue-600">Medical</span></span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#features" class="text-gray-600 hover:text-blue-600 transition">Fitur</a>
+                <a href="#benefits" class="text-gray-600 hover:text-blue-600 transition">Manfaat</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition">Testimoni</a>
+                <a href="#faq" class="text-gray-600 hover:text-blue-600 transition">FAQ</a>
+            </div>
+            <a href="#order" class="md:hidden text-blue-600 font-medium">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-12 md:py-20">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-3xl md:text-5xl font-bold text-gray-800 leading-tight mb-4">
+                    Bantu Redakan Nyeri, <span class="text-blue-600">Tanpa Ribet.</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8">
+                    Kneepad Medical memberikan perlindungan optimal untuk lutut Anda selama beraktivitas. Desain premium dengan bahan berkualitas tinggi untuk kenyamanan maksimal.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#order" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-shopping-cart mr-2"></i> Pesan Sekarang
+                    </a>
+                    <a href="#features" class="bg-white hover:bg-gray-100 text-gray-800 font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 flex items-center justify-center border border-gray-200">
+                        <i class="fas fa-info-circle mr-2 text-blue-600"></i> Pelajari Lebih Lanjut
+                    </a>
+                </div>
+                <div class="mt-8 flex items-center">
+                    <div class="flex -space-x-2">
+                        <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/12.jpg" alt="">
+                        <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/34.jpg" alt="">
+                        <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/45.jpg" alt="">
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-700">Dipercaya oleh <span class="font-bold text-blue-600">1.250+</span> pelanggan</p>
+                        <div class="flex items-center">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="ml-2 text-sm text-gray-600">4.8/5 (1.024 ulasan)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 relative">
+                <div class="relative">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdw6-lyltsvdu2n3o3a.webp" alt="Kneepad Medical" class="rounded-xl shadow-xl w-full max-w-md mx-auto floating-cta">
+                    <div class="absolute -bottom-4 -right-4 bg-white rounded-full shadow-lg p-3 price-badge">
+                        <div class="bg-blue-600 text-white rounded-full px-4 py-2 text-center">
+                            <p class="text-sm font-bold">HARI INI</p>
+                            <p class="text-xl font-bold">Rp 179.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Kenapa Memilih Kneepad Medical?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Desain ergonomis dengan teknologi terbaru untuk memberikan perlindungan maksimal pada lutut Anda</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 border border-gray-100">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">Perlindungan Optimal</h3>
+                    <p class="text-gray-600">Melindungi lutut dari tekanan berlebihan saat berolahraga atau beraktivitas sehari-hari.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 border border-gray-100">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-wind text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">Bahan Bernapas</h3>
+                    <p class="text-gray-600">Bahan berkualitas tinggi yang nyaman dan memungkinkan sirkulasi udara optimal.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 border border-gray-100">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-sliders-h text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">Adjustable</h3>
+                    <p class="text-gray-600">Dapat disesuaikan dengan ukuran lutut Anda untuk kenyamanan maksimal.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 border border-gray-100">
+                    <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-heartbeat text-red-600 text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">Meredakan Nyeri</h3>
+                    <p class="text-gray-600">Membantu mengurangi rasa nyeri pada persendian lutut secara efektif.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Manfaat Kneepad Medical</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Solusi tepat untuk berbagai kebutuhan aktivitas fisik Anda</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdxo-lylttcm8uq8yc2.webp" alt="Manfaat Kneepad" class="rounded-xl shadow-lg w-full">
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-md bg-blue-600 text-white">
+                                    <i class="fas fa-running"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-800">Untuk Olahraga</h3>
+                                <p class="mt-1 text-gray-600">Ideal untuk lari, gym, bersepeda, dan berbagai aktivitas olahraga lainnya yang melibatkan lutut.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-md bg-green-600 text-white">
+                                    <i class="fas fa-briefcase-medical"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-800">Pemulihan Cedera</h3>
+                                <p class="mt-1 text-gray-600">Membantu proses pemulihan pasca cedera dengan memberikan dukungan optimal pada lutut.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-md bg-purple-600 text-white">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-800">Aktivitas Sehari-hari</h3>
+                                <p class="mt-1 text-gray-600">Nyaman digunakan untuk beraktivitas sehari-hari, terutama bagi yang sering berlutut atau berdiri lama.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-md bg-red-600 text-white">
+                                    <i class="fas fa-user-injured"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-800">Pencegahan Nyeri</h3>
+                                <p class="mt-1 text-gray-600">Mencegah timbulnya nyeri lutut bagi yang memiliki riwayat masalah persendian.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Kneepad Medical dalam Aksi</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Lihat bagaimana produk kami memberikan manfaat nyata</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdve-lylttfvw2kg65c.webp" alt="Kneepad Medical" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdx1-lylttjdaz1rr20.webp" alt="Kneepad Medical" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdyi-lylttyewygx42d.webp" alt="Kneepad Medical" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Apa Kata Pelanggan Kami?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Testimoni nyata dari pengguna Kneepad Medical</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/women/32.jpg" alt="Rina">
+                        <div class="ml-3">
+                            <h3 class="font-medium text-gray-800">Rina Wijaya</h3>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Saya seorang guru yang sering berlutut saat mengajar. Sejak pakai Kneepad Medical, nyeri lutut berkurang drastis. Sangat nyaman dipakai seharian!"</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/men/45.jpg" alt="Budi">
+                        <div class="ml-3">
+                            <h3 class="font-medium text-gray-800">Budi Santoso</h3>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Sebagai pelari, produk ini sangat membantu mengurangi tekanan pada lutut. Tidak mudah bergeser saat digunakan untuk lari jarak jauh."</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/women/56.jpg" alt="Dewi">
+                        <div class="ml-3">
+                            <h3 class="font-medium text-gray-800">Dewi Anggraeni</h3>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Setelah operasi lutut, dokter menyarankan pakai knee support. Kneepad Medical ini yang paling nyaman dari semua yang pernah saya coba."</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/men/28.jpg" alt="Hadi">
+                        <div class="ml-3">
+                            <h3 class="font-medium text-gray-800">Hadi Pranoto</h3>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Sebagai pekerja konstruksi, lutut sering sakit karena sering berlutut. Produk ini benar-benar membantu meredakan nyeri dan melindungi lutut saya."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown & Stats Section -->
+    <section class="py-12 bg-blue-600 text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="mb-6 md:mb-0 text-center md:text-left">
+                    <h3 class="text-xl font-bold mb-2">PROMO HARI INI SAJA!</h3>
+                    <p class="text-blue-100">Diskon 50% akan berakhir dalam:</p>
+                </div>
+                
+                <div class="flex space-x-4" id="countdown">
+                    <div class="text-center">
+                        <div class="bg-white text-blue-600 font-bold rounded-lg w-16 h-16 flex items-center justify-center text-2xl countdown-number" id="hours">12</div>
+                        <span class="text-xs mt-1 block">Jam</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-white text-blue-600 font-bold rounded-lg w-16 h-16 flex items-center justify-center text-2xl countdown-number" id="minutes">45</div>
+                        <span class="text-xs mt-1 block">Menit</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-white text-blue-600 font-bold rounded-lg w-16 h-16 flex items-center justify-center text-2xl countdown-number" id="seconds">30</div>
+                        <span class="text-xs mt-1 block">Detik</span>
+                    </div>
+                </div>
+                
+                <div class="mt-6 md:mt-0">
+                    <a href="#order" class="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 flex items-center">
+                        <i class="fas fa-shopping-cart mr-2"></i> Dapatkan Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-white">
+        <div class="max-w-3xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Pertanyaan yang Sering Diajukan</h2>
+                <p class="text-lg text-gray-600">Temukan jawaban untuk pertanyaan umum tentang Kneepad Medical</p>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="flex items-center justify-between w-full p-4 bg-gray-50 hover:bg-gray-100 transition" onclick="toggleFAQ(1)">
+                        <span class="font-medium text-gray-800">Bagaimana cara menentukan ukuran yang tepat?</span>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform" id="faq-icon-1"></i>
+                    </button>
+                    <div class="hidden p-4 text-gray-600" id="faq-content-1">
+                        <p>Kneepad Medical memiliki ukuran universal yang dapat disesuaikan dengan velcro. Cocok untuk lingkar lutut 30-45 cm. Jika Anda berada di antara dua ukuran, kami sarankan memilih ukuran yang lebih besar untuk kenyamanan maksimal.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="flex items-center justify-between w-full p-4 bg-gray-50 hover:bg-gray-100 transition" onclick="toggleFAQ(2)">
+                        <span class="font-medium text-gray-800">Berapa lama pengiriman biasanya?</span>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform" id="faq-icon-2"></i>
+                    </button>
+                    <div class="hidden p-4 text-gray-600" id="faq-content-2">
+                        <p>Pengiriman biasanya memakan waktu 2-5 hari kerja tergantung lokasi pengiriman. Untuk wilayah Jabodetabek biasanya lebih cepat, sekitar 1-3 hari kerja. Kami menggunakan jasa pengiriman terpercaya untuk memastikan produk sampai dengan aman.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="flex items-center justify-between w-full p-4 bg-gray-50 hover:bg-gray-100 transition" onclick="toggleFAQ(3)">
+                        <span class="font-medium text-gray-800">Apakah produk ini bisa dicuci?</span>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform" id="faq-icon-3"></i>
+                    </button>
+                    <div class="hidden p-4 text-gray-600" id="faq-content-3">
+                        <p>Ya, Kneepad Medical dapat dicuci dengan tangan menggunakan air dingin dan sabun lembut. Hindari penggunaan mesin cuci atau pengering karena dapat merusak material. Keringkan secara alami di tempat teduh, jangan dijemur langsung di bawah sinar matahari.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="flex items-center justify-between w-full p-4 bg-gray-50 hover:bg-gray-100 transition" onclick="toggleFAQ(4)">
+                        <span class="font-medium text-gray-800">Apakah ada garansi untuk produk ini?</span>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform" id="faq-icon-4"></i>
+                    </button>
+                    <div class="hidden p-4 text-gray-600" id="faq-content-4">
+                        <p>Kami memberikan garansi 30 hari untuk cacat produksi. Jika Anda menerima produk yang rusak atau tidak sesuai, silakan hubungi customer service kami untuk proses pengembalian atau penggantian. Garansi tidak berlaku untuk kerusakan akibat penggunaan yang tidak sesuai.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8 md:p-12">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Pesan Kneepad Medical Sekarang</h2>
+                        <p class="text-lg text-gray-600 mb-6">Dapatkan perlindungan optimal untuk lutut Anda dengan harga spesial hari ini!</p>
+                        
+                        <div class="bg-blue-50 border-l-4 border-blue-600 p-4 mb-6">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-exclamation-circle text-blue-600"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm text-blue-700">
+                                        <span class="font-bold">PROMO HARI INI:</span> Hemat Rp 89.500 dari harga normal Rp 269.000. Hanya Rp 179.000!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 h-5 w-5 text-green-500">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm text-gray-600">Gratis ongkir untuk pembelian hari ini</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 h-5 w-5 text-green-500">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm text-gray-600">Garansi 30 hari uang kembali</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 h-5 w-5 text-green-500">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm text-gray-600">Stok terbatas, hanya 23 lagi tersedia</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                            <div class="flex items-center">
+                                <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdxx-lyltya3f4y7g1b.webp" alt="Kneepad Medical" class="w-16 h-16 object-cover rounded-lg">
+                                <div class="ml-4">
+                                    <h3 class="font-bold text-gray-800">Kneepad Medical</h3>
+                                    <div class="flex items-center">
+                                        <span class="text-red-600 font-bold text-lg mr-2">Rp 179.000</span>
+                                        <span class="text-gray-500 line-through text-sm">Rp 269.000</span>
+                                        <span class="ml-2 bg-red-100 text-red-800 text-xs font-medium px-2 py-0.5 rounded">Diskon 50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 bg-gray-100 p-8 md:p-12">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Isi Form Pemesanan</h3>
+                        
+                        <!-- OrderOnline Embed Code -->
+                        <div class="ooef">
+                            <form class="orderonline-embed-form" data-username="rara" data-product-slug="kneepad-medical" data-product-id="685c70c01fc4f995bf045a44" id="oo-embed-form-kneepad-medical-8456" data-origin="orderonline">
+                                <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                            </form>
+                        </div>
+                        <script>
+                            if (typeof xLogError != 'function') {
+                                var xLogError = function (error) {
+                                    var req = new XMLHttpRequest();
+                                    var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack });
+                                    var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                                    req.open('POST', 'https://api.orderonline.id/log', true);
+                                    req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                                    req.send(params);
+                                };
+                            }
+                            try {
+                                if (typeof xEmbedScript != 'function') {
+                                    var xEmbedScript = function () {
+                                        !function(w, d, e, v, id, t, s) {
+                                            if (d.getElementById(id)) return;
+                                            t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                            s = d.getElementsByTagName(e)[0];
+                                            s.parentNode.insertBefore(t, s);
+                                        }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                                    };
+                                }
+                                if (typeof xEmbedInit != 'function') {
+                                    var xEmbedInit = function (w, n) {
+                                        if (w.ooe) return;
+                                        n = w.ooe = function() {
+                                            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                                        };
+                                        if (!w._ooe) w._ooe = n;
+                                        n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                                    };
+                                }
+                                xEmbedInit(window);
+                                ooe('setup', 'redirect', 'https://rara.orderonline.id');
+                                ooe('init', '5f12ee789d8e8e5e870172ee', '685c70c01fc4f995bf045a44', null, 'oo-embed-form-kneepad-medical-8456', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false});
+                                if (!window.jQuery) {
+                                    !function(w, d, e, v, id, t, s) {
+                                        if (d.getElementById(id)) return;
+                                        t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                        t.addEventListener('load', xEmbedScript);
+                                        s = d.getElementsByTagName(e)[0];
+                                        s.parentNode.insertBefore(t, s);
+                                    }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+                                } else {
+                                    xEmbedScript();
+                                }
+                            } catch (e) {
+                                xLogError(e);
+                                throw e;
+                            }
+                        </script>
+                        <!-- End OrderOnline Embed Code -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Kneepad Medical. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const midnight = new Date();
+            midnight.setHours(24, 0, 0, 0);
+            
+            const diff = midnight - now;
+            
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            
+            // Add active class to animate
+            document.getElementById('seconds').classList.add('active');
+            setTimeout(() => {
+                document.getElementById('seconds').classList.remove('active');
+            }, 500);
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // FAQ Toggle
+        function toggleFAQ(num) {
+            const content = document.getElementById(`faq-content-${num}`);
+            const icon = document.getElementById(`faq-icon-${num}`);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('transform', 'rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('transform', 'rotate-180');
+            }
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animate elements when they come into view
+        const observerOptions = {
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeIn');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.testimonial-card, .floating-cta').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
